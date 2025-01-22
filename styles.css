@@ -1,0 +1,97 @@
+/* remover margens, espaçamento e ajustar o modelo do website como um todo! */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* estilização do corpo do website */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* estilo da fonte principal */
+    line-height: 1.6; /* espaçamento entre as linhas */
+    padding: 20px; /* espaçamento interno do body */
+    background: #a3599f; /* cor de fundo da página website */
+    color: #ffffff; /* cor da fonte do texto principal */
+}
+
+/* estilização logo L5 Networks */
+#logo {
+  display: flex;
+  height: 115px;  
+}
+
+/* estilização do título */
+header h1 {
+    text-align: center; /* centralizar o título */
+    margin-bottom: 20px; /* espaço inferior do título para o container (div) */
+}
+
+
+/* estilização do container de busca dos usuários */
+.container-main {
+    display: flex; /* exibe os elementos lado a lado */
+    justify-content: center; /* centraliza os inputs horizontalmente */
+    gap: 10px; /*  espaçamento entre os inputs */
+    margin-bottom: 20px; /* espaço inferior da div container */
+}
+
+
+/* estilização dos campos de entrada do website */
+.container-main input {
+    padding: 10px; /* espaçamento interno dos inputs */
+    font-size: 16px; /* tamanho do texto dos inputs (campos de entrada) */
+    border: 4px solid #8a1462; /* cor da borda */
+    border-radius: 15px; /* deixando a borda arredondada */
+    width: 200px; /* definindo a largura fixa*/
+}
+
+
+/* estilização da lista dde usuários */
+#lista-usuarios {
+    list-style: none; /* remove os marcadores a lista */
+    padding: 0; /* remove o espaçamento padrão */
+}
+
+
+/* estilo de cada item da lista */
+.user-item { /* classe criada no arquivo javascript */
+    background: #f5bcd9; /* fundo branco */
+    margin-bottom: 10px; /* espaço inferior entre os itens */
+    padding: 15px; /* espaçamento interno */
+    border: 4px solid #41032e; /* cor da borda */
+    border-radius: 15px; /* arredondamento da borda */
+    display: flex; /* deixa o leiaute flexível */
+    justify-content: space-between; /* trás espaço aos elementos de maneira igualitária */
+    align-items: center; /* alinha os itens no centro do website verticalmente */
+    color: #221e1e;
+}
+
+
+/* estilização do título de cada usuário */
+.user-item h2 {
+    font-size: 18px; /* tamanho do título */
+    margin-bottom: 15px; /* espaço inferior */
+}
+
+
+/* estilização das informações de cada usuário */
+.user-item p {
+    margin: 0; /* remove o espaçamento padrão que viria */
+    font-size: 14px; /* tamanho do texto das infos */
+    color: #2e2d2d; /* cor das infos */   
+}
+
+
+/* estilização para a classe que queremos esconder e dar o efeito de "loading" */
+.escondido {
+    display: none; /* esconde o elemento/ conteúdo da div */
+}
+
+
+/* estilização do texto "Buscando...." */
+#loading {
+    text-align: center; /* alinha ao centro o texto "Buscando..." */
+    font-size: 18px; /* tamanho da fonte */
+    color: #888; /* cor do texto */
+}
